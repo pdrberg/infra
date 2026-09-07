@@ -17,7 +17,7 @@ services:
     environment:
       - "PAPERLESS_REDIS=redis://paperless-broker:6379"
       - "PAPERLESS_DBHOST=paperless-db"
-      - "PAPERLESS_DBENGINE=postgres"
+      - "PAPERLESS_DBENGINE=postgresql"
       - "USERMAP_UID={{ docker_compose_generator_uid }}"
       - "USERMAP_GID={{ docker_compose_generator_gid }}"
       - "PAPERLESS_TIME_ZONE={{ host_timezone }}"
